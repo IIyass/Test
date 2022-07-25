@@ -23,6 +23,6 @@ export const homeSlice = createSlice({
 
 export default homeSlice.reducer;
 
-const selectCreatorsState = (state: any) => state[homeSlice.name];
+const selectHomeState = (state: any) => state[homeSlice.name];
 
-export const open = createSelector(selectCreatorsState, (state) => state.open);
+export const open = createSelector(selectHomeState, (state) => state.open);
